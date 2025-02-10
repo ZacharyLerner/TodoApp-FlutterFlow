@@ -146,6 +146,7 @@ class _CompletedWidgetState extends State<CompletedWidget> {
                               .headlineMedium
                               .override(
                                 fontFamily: 'Inter',
+                                fontSize: 24.0,
                                 letterSpacing: 0.0,
                               ),
                         );
