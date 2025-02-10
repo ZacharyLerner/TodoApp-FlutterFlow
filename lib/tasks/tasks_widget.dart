@@ -106,6 +106,7 @@ class _TasksWidgetState extends State<TasksWidget> {
                       style:
                           FlutterFlowTheme.of(context).headlineMedium.override(
                                 fontFamily: 'Inter',
+                                fontSize: 24.0,
                                 letterSpacing: 0.0,
                               ),
                     ),
