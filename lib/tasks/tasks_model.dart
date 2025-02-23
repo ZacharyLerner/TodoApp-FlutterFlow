@@ -6,8 +6,8 @@ import 'package:flutter/material.dart';
 class TasksModel extends FlutterFlowModel<TasksWidget> {
   ///  State fields for stateful widgets in this page.
 
-  // Stores action output result for [Backend Call - API (randomquote)] action in tasks widget.
-  ApiCallResponse? apiResult4wq;
+  // Stores action output result for [Backend Call - API (getrandomquote)] action in tasks widget.
+  ApiCallResponse? apiResultjkg;
 
   @override
   void initState(BuildContext context) {}

@@ -33,18 +33,18 @@ class _TasksWidgetState extends State<TasksWidget> {
 
     // On page load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
-      _model.apiResult4wq = await RandomquoteCall.call();
+      _model.apiResultjkg = await GetrandomquoteCall.call();
 
-      if ((_model.apiResult4wq?.succeeded ?? true)) {
-        FFAppState().Quote = RandomquoteCall.quote(
-          (_model.apiResult4wq?.jsonBody ?? ''),
+      if ((_model.apiResultjkg?.succeeded ?? true)) {
+        FFAppState().Quote = GetrandomquoteCall.quote(
+          (_model.apiResultjkg?.jsonBody ?? ''),
         )!;
         safeSetState(() {});
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(
-              'Failed to check API',
+              'Unable to call AP',
               style: TextStyle(
                 color: FlutterFlowTheme.of(context).primaryText,
               ),
